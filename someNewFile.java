@@ -15,7 +15,7 @@ public class SqlInjectionAdvancedTest extends IntegrationTest {
         params.clear();
         params.put("username_reg", "tom' AND substring(password,1,1)='t");
         params.put("password_reg", "someNewPassword");
-        params.put("email_reg", "someone@microsoft.com");
+        params.put("email_reg", "my@microsoft.com");
         params.put("confirm_password", "someNewPassword");
         checkAssignmentWithPUT(url("/WebGoat/SqlInjectionAdvanced/challenge"), params, true);
 
