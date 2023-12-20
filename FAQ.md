@@ -8,3 +8,6 @@ Try to run the command in the console `java -jar ...` and remove `-Dlogging.patt
 
 
 ## should work
+
+
+we were here...
